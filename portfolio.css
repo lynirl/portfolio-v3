@@ -1,0 +1,78 @@
+main {
+  display: flex;
+  gap: 10px;
+}
+
+body {
+  background-color: #c4c5e7;
+}
+
+aside{
+  display: flex;
+  flex-basis: auto;
+}
+
+/* nav bar  */
+
+header {
+  background-color: #6667a2;
+  padding-top: 5px; /* marges intérieures */
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+
+/* modifier listes des nav  */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  list-style-type: none;
+  
+  
+}
+
+nav ul a {
+  color: #cca715;
+  text-decoration: none;
+  padding: 2px;
+
+}
+
+footer {
+  background-color: #6667a2;
+  padding-top: 5px; /* marges intérieures */
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* barre de la fenetre */
+
+section.container{
+  height: 30px;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+}
+
+i {
+  padding-left: 10px;
+  
+}
+
+/* la grosse boite */
+.test{
+  background-color: #282a49;
+  color: #f0edff;
+  width: 50%;
+  margin-left: 23%;
+  margin-top: 5%;
+  padding: 10px;
+  border: #6667a2 solid 8px;
+}
