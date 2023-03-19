@@ -1,3 +1,25 @@
+/* fonts */
+
+@font-face {
+  font-family: navfont;
+  src: url(font/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: asidefont;
+  src: url(font/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf)
+}
+
+
+@font-face {
+  font-family: pfont;
+  src: url(font/Source_Sans_Pro/SourceSansPro-Regular.ttf)
+}
+
+
+
+/* le reste */
+
 main {
   display: flex;
   gap: 10px;
@@ -5,12 +27,27 @@ main {
 
 body {
   background-color: #c4c5e7;
+  display: flex;
 }
 
 aside{
   display: flex;
   flex-basis: auto;
+  font-family: asidefont;
 }
+
+
+/* la grosse boite */
+.test{
+  background-color: #282a49;
+  color: #f0edff;
+  width: 50%;
+  margin-left: 23%;
+  margin-top: 5%;
+  padding: 10px;
+  border: #6667a2 solid 8px;
+}
+
 
 /* nav bar  */
 
@@ -30,8 +67,7 @@ nav ul {
   gap: 50px;
   justify-content: center;
   list-style-type: none;
-  
-  
+  font-family: navfont; 
 }
 
 nav ul a {
@@ -66,13 +102,9 @@ i {
   
 }
 
-/* la grosse boite */
-.test{
-  background-color: #282a49;
-  color: #f0edff;
-  width: 50%;
-  margin-left: 23%;
-  margin-top: 5%;
-  padding: 10px;
-  border: #6667a2 solid 8px;
+
+/* fonts du contenu */
+
+.font{
+  font-family: pfont;
 }
