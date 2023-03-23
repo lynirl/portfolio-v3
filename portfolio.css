@@ -47,6 +47,8 @@ aside{
   margin-top: 5%;
   padding: 10px;
   border: #6667a2 solid 8px;
+  /* pour que ça flex correctement */
+  min-width: min-content;
 }
 
 
