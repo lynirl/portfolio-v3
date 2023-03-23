@@ -26,7 +26,8 @@ main {
 }
 
 body {
-  background-color: #c4c5e7;
+  background-image: url("./img/tumblr.gif");
+  background-repeat: repeat;
   display: flex;
 }
 
