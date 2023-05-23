@@ -1,0 +1,65 @@
+
+/* fond d'écran */
+body {
+    background-image: url("img/bliss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+/* fenêtre */
+.window {
+    min-width: 27.2%;
+}
+
+/* moi */
+
+.moi img {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 5px solid white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px black;
+    width: 20%;
+}
+
+
+/* barre */
+footer img {
+    display: flex;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+/* form */
+article button {
+    margin-top: 2%;
+    margin-left: 13%;
+}
+
+textarea {
+    border: #7f9db9 solid 1px ;
+    resize: none;
+}
+
+/* texte du bas des sociaux et icons */
+.textbas {
+position: absolute;
+   right: 5%;
+   bottom: 5%;
+}
+
+.iconsoc1 img {
+    width: 10%;
+    right: 20%;
+    bottom: 12%;
+}
+
+.iconsoc2 img {
+    width: 10%;
+    right: 20%;
+    bottom: 12%;
+}

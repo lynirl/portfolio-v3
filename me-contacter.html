@@ -3,32 +3,70 @@
     <head>
       <meta charset="UTF-8">
       <title>Mon portfolio</title>
-      <link rel="stylesheet" href="portfolio.css"> <!-- Feuille de style principale -->
+      <link rel="stylesheet" href="https://unpkg.com/xp.css"/>
+      <link rel="stylesheet" href="portfolio.css">
+      <script src="test.js"></script>
     </head>
 
     <body>
-        
-    <!-- header et nav -->
-      <header>
-          <nav>
 
-        </nav>
-      </header>
+    <!-- fenêtre -->
+    <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Portfolio
+        </div>
 
-      <!-- partie principale et articles -->
-      <main>
-        
-        <article>
+      <!-- controles (déco) -->
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
 
-        </article>
+      <!-- dans la fenêtre -->
+    <div class="window-body">
+       <!-- tablist -->
+      <section class="tabs" style="max-width: 500px">
+         <menu role="tablist" aria-label="Sample Tabs">
+            <button role="tab" aria-controls="tab-A">Accueil</button>
+            <button role="tab" aria-controls="tab-B">Projets</button>
+            <button role="tab" aria-selected="true" aria-controls="tab-C">Contact</button>
+          </menu>
 
-      </main>
-
-     <!-- footer -->
-      <footer>
+      <!-- the tab content -->
+      <article role="tabpanel" id="tab-C">
        
-      </footer>
+        <h4>Me contacter</h4>
 
+        <p>Vous pouvez m'envoyer un message avec le formulaire ci-dessous...</p>
+
+          <div class="field-row-stacked" style="width: 200px">
+            <label for="text22">Adresse mail</label>
+            <input id="text22" type="text" />
+          </div>
+          <div class="field-row-stacked" style="width: 200px">
+            <label for="text24">Message</label>
+            <textarea id="text24" rows="8"></textarea>
+          </div>
+          <button id="btnForm">Envoyer</button>
+
+          <div class="iconsoc1"><img src="img/twitter.png"></div>
+          <div class="iconsoc2"><img src="img/github.png"></div>
+
+        <p class="textbas">...ou mes réseaux!</p>
+
+      </article>
+    </section>
+      
+     </div>
+    </div>
+
+     <!-- footer / barre -->
+    <footer>
+      <img src="img/barre.png">
+    </footer>
     </body>
 
 

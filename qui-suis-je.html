@@ -3,32 +3,63 @@
     <head>
       <meta charset="UTF-8">
       <title>Mon portfolio</title>
-      <link rel="stylesheet" href="portfolio.css"> <!-- Feuille de style principale -->
+      <link rel="stylesheet" href="https://unpkg.com/xp.css"/>
+      <link rel="stylesheet" href="portfolio.css">
+      <script src="test.js"></script>
     </head>
 
     <body>
-        
-    <!-- header et nav -->
-      <header>
-          <nav>
 
-        </nav>
-      </header>
+    <!-- fenêtre -->
+    <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Portfolio
+        </div>
 
-      <!-- partie principale et articles -->
-      <main>
-        
-        <article>
+      <!-- controles (déco) -->
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
 
-        </article>
+      <!-- dans la fenêtre -->
+    <div class="window-body">
+       <!-- tablist -->
+      <section class="tabs" style="max-width: 500px">
+         <menu role="tablist" aria-label="Sample Tabs">
+            <button role="tab" aria-selected="true" aria-controls="tab-A">Accueil</button>
+            <button role="tab" aria-controls="tab-B">Projets</button>
+            <button role="tab" aria-controls="tab-C">Contact</button>
+          </menu>
 
-      </main>
+      <!-- the tab content -->
+      <article role="tabpanel" id="tab-A">
+        <h3>Bonjour</h3>
+        <br>
+        <p>
+          Bienvenue sur mon portfolio!
+        </p>
+        <p>
+          Je suis Rachel Peretti, étudiante à l'IUT2 de Grenoble, et actuellement en première année de BUT informatique.
+          Si vous souhaitez en savoir plus sur mes projets ou me contacter, utilisez les onglets ci-dessus!
+        </p>
+        <div class="moi">
+          <img src="img/user.png">
+        </div>
+      </article>
+      
+    </section>
+      
+     </div>
+    </div>
 
-     <!-- footer -->
-      <footer>
-       
-      </footer>
-
+    <!-- footer / barre -->
+    <footer>
+      <img src="img/barre.png">
+    </footer>
     </body>
 
 
