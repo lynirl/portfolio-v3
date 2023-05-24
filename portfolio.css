@@ -5,11 +5,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    width: 100%;
 }
 
 /* fenêtre */
 .window {
+    position: absolute;
     min-width: 27.2%;
+    margin-top: 10%;
+    margin-left: 35%;
+    max-height: 500px; /*a voir pour mettre en %*/
+}
+
+.title-bar {
+    cursor: move;
+}
+
+article[role=tabpanel]{ /*gère le contenu des tabpanels*/
+    max-height: 400px; /*a voir pour mettre en %*/
+    overflow: scroll;
+    height: calc(100% - 44px);
 }
 
 /* moi */
@@ -40,7 +55,7 @@ article button {
     margin-left: 13%;
 }
 
-textarea {
+textarea {jsdfksjfsdjkfs
     border: #7f9db9 solid 1px ;
     resize: none;
 }
@@ -53,13 +68,44 @@ position: absolute;
 }
 
 .iconsoc1 img {
-    width: 10%;
-    right: 20%;
-    bottom: 12%;
+    position: absolute;
+    width: 8%;
+    right: 15%;
+    bottom: 15%;
 }
 
 .iconsoc2 img {
-    width: 10%;
-    right: 20%;
-    bottom: 12%;
+    position: absolute;
+    width: 8%;
+    right: 5%;
+    bottom: 15%;
+}
+
+/* test container */
+
+.containert {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.containert img {
+    margin-left: 20%;
+    width: 50%;
+}
+
+.containert p {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/*contient les containers*/
+.containerm {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+summary {
+    font-weight: bold;
 }
