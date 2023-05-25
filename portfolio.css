@@ -5,7 +5,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    width: 100%;
 }
 
 /* fenêtre */
@@ -41,14 +40,14 @@ article[role=tabpanel]{ /*gère le contenu des tabpanels*/
 
 
 /* barre */
-footer img {
+/* footer img {
     display: flex;
     position:absolute;
     bottom:0;
     left:0;
     width:100%;
     z-index: -20;
-}
+} */
 
 /* form */
 article button {
@@ -117,4 +116,71 @@ position: absolute;
 
 summary {
     font-weight: bold;
+}
+
+/* barre start */
+
+.btnStart{
+    background: url(img/start/001.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    
+    width: 5.5%;
+    height: 4%;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+    inset: none;
+}
+
+.btnStart:not(:disabled):hover{ 
+    /*bien respecter les sélecteurs du css sinon ça marche pas.*/
+    /*source: 2h30 sur la barre des tâches*/
+    background: url(img/start/002.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    inset:none;
+    border: none;
+    outline: none;
+}
+
+ footer button:not(:disabled).active, .btnStart:not(:disabled):active {
+    background: url(img/start/003.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+    inset: none;
+}
+
+footer button.focused, .btnStart:focus{
+    
+    box-shadow: none;
+    inset: none;
+    outline: none;
+    border: none;
+}
+
+/* ----------------- */
+
+.barStart{
+    background: url(img/start/100.png);
+    bottom: 0;
+    left: 5%;
+    
+    height: 4%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    z-index: -2; /*comme ça c derrière le bouton*/
+    
 }
