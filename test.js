@@ -7,13 +7,6 @@ $( function() {
 
 // -------------------
 
-// date time?
-
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-
-// -------------------
-
 //for the tabs to work
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -76,3 +69,7 @@ function changeTabs(e) {
     .querySelector(`#${target.getAttribute("aria-controls")}`)
     .removeAttribute("hidden");
 }
+
+// -------------------
+
+
