@@ -97,13 +97,17 @@ position: absolute;
 }
 
 .containert img {
-    margin-left: 20%;
     width: 50%;
 }
 
 .containert p {
     font-size: 15px;
     font-weight: bolder;
+}
+
+.containert ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*contient les containers*/
@@ -116,6 +120,16 @@ position: absolute;
 
 summary {
     font-weight: bold;
+}
+
+details {
+    max-width: 90%;
+}
+
+/* test */
+
+.containersp {
+    margin-left: 10%;
 }
 
 /* barre start */
