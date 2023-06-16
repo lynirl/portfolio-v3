@@ -122,6 +122,10 @@ summary {
     font-weight: bold;
 }
 
+summary:hover{
+    cursor:pointer;
+}
+
 details {
     max-width: 90%;
 }
